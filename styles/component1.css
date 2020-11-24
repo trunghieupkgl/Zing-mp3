@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.wrapper-contain {
+    padding: 0px 15%;
+    margin: 20px 0px;
+}
+
+.wrapper-top {
+    margin-bottom: 15px;
+}
+
+.wrapper-top h4 {
+    font-size: 1.65rem;
+    font-weight: bold;
+}
+
+/* Component1 */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.component1 {
+    text-align: left;
+    /* display: flex;
+    flex-direction: column; */
+    width: 18%;
+}
+
+.component1 a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.component1 a:hover {
+    color: #9182b9;
+}
+
+    .image-top {
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .image-top img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .background {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #00000070;
+        z-index: 998;
+        box-sizing: border-box;
+    }
+
+    .image-top:hover .background {
+        opacity: 1;
+    }
+
+    .image-top:hover img {
+        transform: scale(1.2);
+        transition: all 0.7s;
+    }
+
+/* End Of Component1 */
