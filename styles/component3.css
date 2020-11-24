@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Banner */
+.banner {
+    margin: 10px 0px;
+    padding: 0 15%;
+}
+    /* Banner Top */
+    .banner-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner-top .banner-top-item {
+        width: 23%;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .banner-top-item img {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+
+    .banner-top-item:hover img {
+        transform: scale(1.1);
+        transition: all 0.7s;
+    }
+    /* End Of Banner Top */
+
+    /* Banner Main */
+    .banner-main {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+
+    .banner-main-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        padding: 10px;
+        background-image: url('https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/spotlight-bg.jpg');
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #0000007a;
+    }
+
+    .banner-main-item .avatar-singer {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url('https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/6/8/7/e687a5d265bd19b32da2fc5084e4314c.jpg');
+        background-size: cover;
+    }
+
+    .banner-main-item .singer-content a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: white;
+        padding: 3px 5px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, rgba(78,57,216,1) 0%, rgba(137,78,226,1) 100%, rgba(0,212,255,1) 100%);
+    }
+
+    .banner-main-item .singer-content p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    /* End Of Banner Main */
+
+/* End Of Banner */
