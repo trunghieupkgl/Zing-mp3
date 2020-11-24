@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* MV List */
+.mv-list {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+}
+    .mv-list-item-header {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .mv-list-item-header img {
+        width: 100%;
+        display: block;
+    }
+
+    .mv-list-item-header:hover img {
+        transform: scale(1.1);
+        transition: all 0.7s;
+    }
+
+    .mv-list-item-header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00000030;
+        color: white;
+    }
+
+    .mv-list-item-header-background i {
+        opacity: 0;
+    }
+
+    .background-content {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        opacity: 1;
+    }
+
+    .mv-list-item-header:hover .mv-list-item-header-background i {
+        opacity: 1;
+    }
+
+    .mv-list-item-header:hover .background-content {
+        opacity: 0;
+    }
+/* End Of MV List */
+
+/* Banner */
+.banner {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 15%;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner-content img {
+    width: 5%;
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.banner-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fdd100;
+    font-weight: bold;
+    color: white;
+}
+/* End Of Banner */
