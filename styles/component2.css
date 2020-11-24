@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Component 2 */
+.component2 {
+    display: flex;
+    border-radius: 5px;
+}
+    .component2-left {
+        width: 60%;
+        position: relative;
+    }
+
+    .background2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-color: #362a56bf;
+        box-sizing: border-box;
+    }
+
+    .background2 > a {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgba(78,57,216,1) 0%, rgba(137,78,226,1) 100%, rgba(0,212,255,1) 100%);
+        float: left;
+    }
+
+    .background2 > p {
+        font-size: 1.25rem;
+        color: white;
+        float: left;
+    }
+
+    .background2 button {
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #65509e;
+        border: none;
+        float: right;
+    }
+
+    .background2 ul {
+        padding: 0px 20px;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+        margin-top: auto;
+        box-sizing: border-box;
+    }
+
+    .background2 li {
+        flex-grow: 1;
+    }
+
+    .background2 li > p {
+        color: whitesmoke;
+    }
+
+    .component2-left img {
+        width: 100%;
+        display: block;
+    }
+
+    .component2-right {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 40%;
+        background-color: #362a56;
+    }
+
+    .component2-item {
+        padding: 10px 10px 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .component2-item .item-image {
+        height: 50px;
+        width: 50px;
+        border-radius: 3px;
+        background-image: url('https://picsum.photos/200');
+        background-size: cover;
+        margin: 0px 10px;
+    }
+
+    .component2-item .item-image > .background1 {
+        background-color: #00000070;
+        color: white;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .component2-item .item-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .component2-item .item-content p {
+        color: whitesmoke;
+    }
+
+    .component2-item .item-content p:first-child {
+        font-size: 1.15rem;
+        margin-bottom: 5px;
+    }
+
+    .component2-item:hover {
+        background-color: #4e4662;
+    }
+
+    .component2-item:hover .background1 {
+        opacity: 1;
+    }
+
+    .component2-item > p:first-child {
+        font-size: 1.25rem;
+        color: #4a90e2;
+    }
+
+    .component2-item > p:last-child {
+        color: #4a90e2;
+        font-size: 1.05rem;
+    }
+/* End Of Component 2 */
